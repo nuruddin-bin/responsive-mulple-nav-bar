@@ -72,3 +72,23 @@ section{
     flex: 1;
 }
 
+.btn{
+    margin: 0 .2rem;
+    padding: .5rem 1.3rem;
+    line-height: 1;
+    border-radius: 2rem;
+    text-transform: uppercase;
+    border: 2px solid #fff;
+    display: inline-block;
+}
+
+.btn.transparent, .btn.solid:hover{
+    color: #fff;
+    background: transparent;
+}
+
+.btn.solid, .btn.transparent:hover{
+    background: #fff;
+    color: #9145B6;
+}
+
