@@ -92,3 +92,29 @@ section{
     color: #9145B6;
 }
 
+.nav-links > ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-link > a{
+    color: #fff;
+    font-size: .95rem;
+    letter-spacing: 1px;
+    line-height: 3rem;
+    padding: 0 .8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .3s;
+}
+
+.nav-link > a > i{
+    margin-left: .2rem;
+}
+
+.nav-link > a:hover{
+    transform: scale(1.1);
+}
+
