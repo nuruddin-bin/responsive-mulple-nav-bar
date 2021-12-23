@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,13 +10,14 @@
     <link rel="stylesheet" href="./css/style.css">
     <title>Multiple Nav Bar</title>
 </head>
+
 <body>
     <header>
         <nav class="container">
             <div class="logo-container">
                 <h3 class="logo">Nur</h3>
             </div>
-            
+
             <div class="nav-btn">
                 <div class="nav-links">
                     <ul>
@@ -24,6 +26,57 @@
                         </li>
                         <li class="nav-link">
                             <a href="#">Menu<i class="fas fa-caret-down"></i></a>
+                            
+                            <div class="dropdown">
+                                <ul>
+                                    <li class="dropdown-link">
+                                        <a href="#">Link 1</a>
+                                    </li>
+                                    <li class="dropdown-link">
+                                        <a href="#">Link 2</a>
+                                    </li>
+                                    <li class="dropdown-link">
+                                        <a href="#">Link 3<i class="fas fa-caret-down"></i></a>
+
+                                        <div class="dropdown second">
+                                            <ul>
+                                                <li class="dropdown-link">
+                                                    <a href="#">Link 1</a>
+                                                </li>
+                                                <li class="dropdown-link">
+                                                    <a href="#">Link 2</a>
+                                                </li>
+                                                <li class="dropdown-link">
+                                                    <a href="#">Link 3</a>                                    
+                                                </li>
+                                                <li class="dropdown-link">
+                                                    <a href="#">More<i class="fas fa-caret-down"></i></a>
+                                                    <div class="dropdown second">
+                                                        <ul>
+                                                            <li class="dropdown-link">
+                                                                <a href="#">Link 1</a>
+                                                            </li>
+                                                            <li class="dropdown-link">
+                                                                <a href="#">Link 2</a>
+                                                            </li>
+                                                            <li class="dropdown-link no-border">
+                                                                <a href="#">Link 3</a>                                    
+                                                            </li>                                      
+                                                            <div class="arrow"></div>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+                                                <div class="arrow"></div>
+                                            </ul>
+                                        </div>
+
+                                    </li>
+                                    <li class="dropdown-link">
+                                        <a href="#">Link 4</a>
+                                    </li>
+                                    <div class="arrow"></div>
+                                </ul>
+                            </div>
                         </li>
                         <li class="nav-link">
                             <a href="#">Servlces<i class="fas fa-caret-down"></i></a>
@@ -38,11 +91,14 @@
                     <a href="#" class="btn solid">Sign up</a>
                 </div>
             </div>
-             
+
         </nav>
     </header>
+
     <main>
         <section></section>
     </main>
+
 </body>
+
 </html>
