@@ -41,7 +41,7 @@ section{
 .container{
     position: relative;
     max-width: 65rem;
-    /* background: orchid; */
+    background: orchid;
     padding: 0 2rem;
     margin: 0 auto;
     display: flex;
@@ -51,7 +51,7 @@ section{
     display: flex;
     flex: 1;
     align-items: center;
-    /* background: red; */
+    background: red;
 }
 
 .logo{
@@ -62,18 +62,18 @@ section{
 }
 
 .nav-btn{
-    /* background: green; */
+    background: green;
     flex: 3;
-    display: flex;
+    display: none;
 }
 
 .nav-links{
-    /* background: greenyellow; */
+    background: greenyellow;
     flex: 2;
 }
 
 .log-sign{
-    /* background: rgb(66, 20, 43); */
+    background: rgb(66, 20, 43);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -89,6 +89,7 @@ section{
     border: 2px solid #fff;
     display: inline-block;
     transition: .3s;
+    font-size: .8rem;
 }
 
 .btn.transparent, .btn.solid:hover{
@@ -213,4 +214,53 @@ section{
     pointer-events: auto;
     opacity: 1;
     transform: translate(0, 0);
+}
+
+
+/* design for responsive
+---------------------- */
+
+/* hamburger style */
+
+.hamburger-menu-container{
+    flex: 1;
+    background: black;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.hamburger-menu{
+    width: 2.5rem;
+    height: 2.5rem;
+    background: rgb(121, 97, 209);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hamburger-menu div{
+    width: 1.6rem;
+    height: 3px;
+    border-radius: 3px;
+    background: #fff;
+    position: relative;
+}
+
+.hamburger-menu div::before,
+.hamburger-menu div::after{
+    content: '';
+    width: inherit;
+    height: inherit;
+    background: #fff;
+    position: absolute;
+    border-radius: 3px;
+}
+
+.hamburger-menu div::before{
+    transform: translateY(-7px);
+}
+
+.hamburger-menu div::after{
+    transform: translateY(7px);
 }
