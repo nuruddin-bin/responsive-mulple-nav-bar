@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
 
 *{
     margin: 0;
@@ -40,7 +41,7 @@ section{
 .container{
     position: relative;
     max-width: 65rem;
-    background: orchid;
+    /* background: orchid; */
     padding: 0 2rem;
     margin: 0 auto;
     display: flex;
@@ -50,22 +51,29 @@ section{
     display: flex;
     flex: 1;
     align-items: center;
-    background: red;
+    /* background: red; */
+}
+
+.logo{
+    font-size: 2rem;
+    font-family: 'Yellowtail', cursive;
+    letter-spacing: 3px;
+    color: #fff;
 }
 
 .nav-btn{
-    background: green;
+    /* background: green; */
     flex: 3;
     display: flex;
 }
 
 .nav-links{
-    background: greenyellow;
+    /* background: greenyellow; */
     flex: 2;
 }
 
 .log-sign{
-    background: rgb(66, 20, 43);
+    /* background: rgb(66, 20, 43); */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -80,6 +88,7 @@ section{
     text-transform: uppercase;
     border: 2px solid #fff;
     display: inline-block;
+    transition: .3s;
 }
 
 .btn.transparent, .btn.solid:hover{
@@ -128,6 +137,9 @@ section{
     left: 0;
     width: 10rem;
     transform: translateY(10px);
+    pointer-events: none;
+    opacity: 0;
+    transition: .5s;
 }
 
 .dropdown ul{
@@ -167,7 +179,7 @@ section{
     top: -.4rem;
     left: 1rem;
     cursor: pointer;
-    z-index: 1;
+    z-index: -1;
     transition: .3s;
 }
 
@@ -184,6 +196,7 @@ section{
     left: 100%;
     padding-left: .8rem;
     cursor: pointer;
+    transform: translateX(10px);
 }
 
 .dropdown.second .arrow{
@@ -193,4 +206,11 @@ section{
 
 .dropdown-link.no-border{
     border-bottom: none;
+}
+
+.nav-link:hover > .dropdown,
+.dropdown-link:hover > .dropdown{
+    pointer-events: auto;
+    opacity: 1;
+    transform: translate(0, 0);
 }
