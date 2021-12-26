@@ -41,7 +41,6 @@ section{
 .container{
     position: relative;
     max-width: 65rem;
-    background: orchid;
     padding: 0 2rem;
     margin: 0 auto;
     display: flex;
@@ -51,7 +50,6 @@ section{
     display: flex;
     flex: 1;
     align-items: center;
-    background: red;
 }
 
 .logo{
@@ -62,18 +60,15 @@ section{
 }
 
 .nav-btn{
-    background: green;
     flex: 3;
     display: flex;
 }
 
 .nav-links{
-    background: greenyellow;
     flex: 2;
 }
 
 .log-sign{
-    background: rgb(66, 20, 43);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -224,7 +219,6 @@ section{
 
 .hamburger-menu-container{
     flex: 1;
-    background: black;
     display: none;
     justify-content: flex-end;
     align-items: center;
@@ -233,7 +227,6 @@ section{
 .hamburger-menu{
     width: 2.5rem;
     height: 2.5rem;
-    background: rgb(121, 97, 209);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -305,6 +298,89 @@ section{
     }
 
     .nav-btn{
-        display: none;
+        position: fixed;
+        height: calc(100vh - 2.7rem);
+        top: 2.7rem;
+        left: 0;
+        width: 100%;
+        background: #bd88d8;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        overflow-x: hidden;
+        overflow-y: auto;
     }
+
+    .nav-links{
+        flex: initial;
+        width: 100%;
+    }
+
+    .nav-links > ul{
+        flex-direction: column;
+    }
+
+    .nav-link{
+        width: 100%;
+    }
+
+    .nav-link > a{
+        line-height: 1;
+        padding: 1.6rem 2rem;
+    }
+
+    .nav-link:hover > a{
+        transform: scale(1);
+        background: #611985;
+    }
+
+    .dropdown, .dropdown.second{
+        position: initial;
+        top: initial;
+        left: initial;
+        transform: initial;
+        opacity: 1;
+        pointer-events: auto;
+        width: 100%;
+        padding: 0;
+        background: #c371ec;
+    }
+
+    .dropdown-link > a{
+        background: transparent;
+        color: #fff;
+        padding: 1.2rem 2rem;
+    }
+
+    .dropdown-link .dropdown.second{
+        padding-left: 3rem;
+    }
+
+    .dropdown-link:not(:nth-child(4)){
+        border-bottom: none;
+    }
+
+    .arrow{
+        z-index: 1;
+        background: #c371ec;
+        left: 10%;
+        transform: scale(1.1) rotate(45deg);
+        transition: .5s;
+        top: -7px;
+    }
+
+    .nav-link:hover .arrow{
+        background: #611985;
+    }
+
+    .dropdown-link:first-child:hover ~ .arrow{
+        background: #611985;
+    }
+
+    .log-sign{
+        flex: initial;
+        width: 100%;
+    }
+
+
 }
