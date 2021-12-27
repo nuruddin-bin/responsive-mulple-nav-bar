@@ -176,7 +176,7 @@ section{
     left: 1rem;
     cursor: pointer;
     z-index: -1;
-    /* transition: .3s; */
+    transition: .3s;
 }
 
 .dropdown-link:first-child:hover ~ .arrow{
